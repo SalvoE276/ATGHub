@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html>
 <body>
+  <script>
+    let jsonData = `[
+  {"Name": "Lion", "Color": "Yellow"},
+  {"Name": "Monkey", "Color": "Orange"},
+  {"Name": "Fish", "Color": "Blue"},
+  {"Name": "Cat", "Color": "Black"}
+]`
+
+let data = JSON.parse(jsonData)
+
+function search_animal() {
+  let input = document.getElementById('searchbar').value
+  input = input.toLowerCase();
+  let x = document.querySelector('#list-holder');
+  x.innerHTML = ""
+
+  for (i = 0; i < data.length; i++) {
+    let obj = data[i];
+
+    if (obj.Name.toLowerCase().includes(input)) {
+      const elem = document.createElement("li")
+      elem.innerHTML = `${obj.Name} - ${obj.Color}`
+      x.appendChild(elem)
+    }
+  }
+}
+  </script>
 
 <h1>My First Heading</h1>
 
-<p>My first paragraph.</p>
+<input id="searchbar" onkeyup="search_animal()" type="text" name="search">
 
+<ul id="list-holder">
+
+</ul>
+  
+
+
+  
 </body>
 </html>
