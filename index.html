@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <title>ATGHub</title>
         <style>
             body {background-color: #121212;}
 
@@ -59,6 +60,16 @@
                 font-size: 20px;
             }
 
+            a.tableheader {
+                text-align: center;
+                margin: auto;
+                color: #e0e0e0;
+            }
+
+            a.tableheader:hover {
+              text-shadow: 0 0 10px #888888;
+            }
+
             td {
                 border: 1px solid;
                 border-collapse: collapse;
@@ -68,7 +79,15 @@
                 font-size: 15px;
             }
 
-            tr:hover {background-color: #0300ab;}
+            a.entry_link {
+                color: white;
+            }
+
+            a.entry_link:hover {
+                color: orangered;
+            }
+
+            tr:hover {background-color: #010027;}
 
             table {
                 border: 1px solid;
@@ -126,10 +145,24 @@ function search_gene() {
   }
 
   const header_array = ["Gene Symbol", "Entrez ID", "Ensembl ID", "Core AutophagyNet", "AutophagyNet", "HADB", "HAMdb", "GO-0061919"]
+  const header_link_array = ["", "https://www.ncbi.nlm.nih.gov/gene/", "https://www.ensembl.org/Homo_sapiens/Location/View?g=", "", "https://www.autophagynet.org/", "https://www.autophagy.lu/", "http://hamdb.scbdd.com/", "https://www.ebi.ac.uk/QuickGO/term/GO:0061919"]
   for (const element of header_array) {
-        const header = document.createElement("th")
-        header.innerHTML = element
-        entry.appendChild(header)
+    if (element === "Gene Symbol" || element === "Entrez ID" || element === "Ensembl ID" || element === "Core AutophagyNet") {
+      const header = document.createElement("th")
+      header.innerHTML = element
+      entry.appendChild(header)
+      continue
+    }
+
+    const header = document.createElement("th")
+    const link = document.createElement("a")
+
+    link.innerHTML = element
+    link.href = header_link_array[header_array.indexOf(element)]
+    link.target = "_blank"
+    link.classList.add("tableheader");
+    header.appendChild(link)
+    entry.appendChild(header)
     }
 
   for (i = 0; i < data.length; i++) {
@@ -139,10 +172,22 @@ function search_gene() {
       const row = document.createElement("tr")
 
     for (const element of header_array) {
+      if (element === "Entrez ID" || element === "Ensembl ID") {
         const entry_elem = document.createElement("td")
-        entry_elem.innerHTML = `${obj[element]}`
+        const link = document.createElement("a")
+
+        link.innerHTML = `${obj[element]}`
+        link.href = `${header_link_array[header_array.indexOf(element)]}${obj[element]}`
+        link.target = "_blank"
+        link.classList.add("entry_link");
+        entry_elem.appendChild(link)
         row.appendChild(entry_elem)
-        }
+        continue
+      }
+      const entry_elem = document.createElement("td")
+      entry_elem.innerHTML = `${obj[element]}`
+      row.appendChild(entry_elem)
+      }
       entry.appendChild(row)
     }
   }
