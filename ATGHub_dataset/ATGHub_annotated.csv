@@ -1,0 +1,42 @@
+Gene Symbol,Entrez ID,Ensembl ID,Core AutophagyNet,AutophagyNet,HADB,HAMdb,GO-0061919
+ATG10,83734,ENSG00000152348,1,1,1,1,1,Autophagy core,ATG12 Ubiquitin-like conjugation systems
+ATG14,22863,ENSG00000126775,1,1,1,1,1,Autophagy core | Docking and fusion,"Beclin1/PI3K complex interacting proteins | Tethers, Adaptors"
+ATG16L1,55054,ENSG00000085978,1,1,1,1,1,Autophagy core,ATG12 Ubiquitin-like conjugation systems
+ATG2A,23130,ENSG00000110046,1,1,1,1,1,Autophagy core,ATG9 and its cycling system
+ATG4B,23192,ENSG00000168397,1,1,1,1,1,Autophagy core,ATG8 Ubiquitin-like conjugation systems
+ATG4C,84938,ENSG00000125703,0,1,1,1,1,Autophagy core,ATG8 Ubiquitin-like conjugation systems
+ATG5,9474,ENSG00000057663,1,1,1,1,1,Autophagy core,ATG12 Ubiquitin-like conjugation systems
+ATG7,10533,ENSG00000197548,1,1,1,1,1,Autophagy core | Autophagy core,ATG8 Ubiquitin-like conjugation systems | ATG12 Ubiquitin-like conjugation systems
+ATG9A,79065,ENSG00000198925,0,1,1,1,1,Autophagy core,ATG9 and its cycling system
+BECN1,8678,ENSG00000126581,1,1,1,1,1,Autophagy core | Mitophagy,PI3K complexes | Mitophagy core
+BNIP3,664,ENSG00000176171,0,1,1,1,1,Mitophagy,Mitophagy core
+C9orf72,203228,ENSG00000147894,0,1,1,1,1,Autophagy core,Negative Regulator of Autophagy
+CALCOCO2,10241,ENSG00000136436,0,1,1,1,1,Autophagy core | Mitophagy,Cargo receptors for Selective Autophagy  | Mitophagy-specific cargo receptors
+CDKN2A,1029,ENSG00000147889,0,1,1,1,1,,
+CHMP4B,128866,ENSG00000101421,0,1,1,1,1,,
+HDAC6,10013,ENSG00000094631,0,1,1,1,1,Autophagy core | Mitophagy,Cargo indirectly associated with ubiquitinated proteins or with LC3 | Mitophagy core
+IRGM,345611,ENSG00000237693,0,1,1,1,1,Autophagy core,Positive regulator of Autophagy
+LAMP2,3920,ENSG00000005893,0,1,1,1,1,Lysosome,
+MAP1LC3A,84557,ENSG00000101460,1,1,1,1,1,Autophagy core,ATG8 Ubiquitin-like conjugation systems
+MAP1LC3B,81631,ENSG00000140941,1,1,1,1,1,Autophagy core,ATG8 Ubiquitin-like conjugation systems
+MTOR,2475,ENSG00000198793,0,1,1,1,1,mTOR and upstream pathways,mTOR complexes 1 and 2
+NBR1,4077,ENSG00000188554,0,1,1,1,1,Autophagy core,Cargo receptors for Selective Autophagy 
+NPC1,4864,ENSG00000141458,0,1,1,1,1,mTOR and upstream pathways | Lysosome,mTOR regulators | 
+NRBF2,29982,ENSG00000148572,0,1,1,1,1,,
+OPTN,10133,ENSG00000123240,0,1,1,1,1,Autophagy core | Mitophagy,Cargo receptors for Selective Autophagy  | Mitophagy-specific cargo receptors
+PIK3C3,5289,ENSG00000078142,1,1,1,1,1,Autophagy core,PI3K complexes
+PINK1,65018,ENSG00000158828,0,1,1,1,1,Autophagy core | Mitophagy,Beclin1/PI3K complex interacting proteins | Mitophagy core
+PRKAA1,5562,ENSG00000132356,0,1,1,1,1,mTOR and upstream pathways,AMPK complex
+PRKN,5071,ENSG00000185345,0,1,1,1,1,,
+RPTOR,57521,ENSG00000141564,0,1,1,1,1,mTOR and upstream pathways,mTOR complexes 1 and 2
+SQSTM1,8878,ENSG00000161011,1,1,1,1,1,Autophagy core | Mitophagy,Cargo receptors for Selective Autophagy  | Mitophagy-specific cargo receptors
+TECPR1,25851,ENSG00000205356,1,1,1,1,1,Autophagy core | Docking and fusion | Lysosome,"Cargo indirectly associated with ubiquitinated proteins or with LC3 | Tethers, Adaptors | "
+TMEM74,157753,ENSG00000164841,0,1,1,1,1,Autophagy core | Lysosome,Positive regulator of Autophagy | 
+TP53,7157,ENSG00000141510,0,1,1,1,1,Autophagy regulators,Positive regulator of Autophagy genes
+UBQLN1,29979,ENSG00000135018,0,1,1,1,1,,
+ULK1,8408,ENSG00000177169,1,1,1,1,1,mTOR and upstream pathways | Autophagy core | Mitophagy,mTORC1 substrates  | ULK1 complex | Mitophagy core
+ULK2,9706,ENSG00000083290,1,1,1,1,1,Autophagy core,ULK1 complex
+UVRAG,7405,ENSG00000198382,1,1,1,1,1,Autophagy core,Beclin1/PI3K complex interacting proteins
+VCP,7415,ENSG00000165280,0,1,1,1,1,Mitophagy,Mitophagy core
+WDR45,11152,ENSG00000196998,0,1,1,1,1,Autophagy core,ATG9 and its cycling system
+ZFYVE1,53349,ENSG00000165861,0,1,1,1,1,Autophagy core,Positive regulator of Autophagy
